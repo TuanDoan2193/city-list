@@ -19,8 +19,6 @@ const Map = (props: MapProps) => {
     L.latLng(parseFloat(city.lattitude), parseFloat(city.longitude)),
   );
 
-  console.log(cities);
-
   return (
     <MapContainer
       className="h-full w-full rounded-lg"
