@@ -2,8 +2,10 @@ import React from "react";
 import { api } from "~/utils/api";
 import { useRouter } from "next/router";
 import type { Landmark } from "@prisma/client";
+import LoadingPage from "~/components/LoadingPage";
 
 const DISPLAYED_PROPS = [
+  "name_native",
   "continent",
   "founded",
   "population",
@@ -23,7 +25,7 @@ const CityPage = () => {
     return names.join(", ");
   };
 
-  if (!city) return null;
+  if (!city) return <LoadingPage />;
 
   return (
     <div className="h-screen w-screen bg-zinc-900 p-10">
