@@ -1,4 +1,4 @@
-# Stack
+## Stack
 Next14, tRPC, ReactQuery, Prisma, MySQL
 
 ## Description
